@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartTools Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>SmartTools Web</h1>
+
+  <select id="toolSelect" onchange="changeTool()">
+    <option value="qr">QR Generator</option>
+    <option value="password">Password Generator</option>
+    <option value="base64">Base64 Encode/Decode</option>
+    <option value="json">JSON Formatter</option>
+    <option value="hash">SHA-256 Hash</option>
+    <option value="uuid">UUID Generator</option>
+  </select>
+
+  <div id="toolArea"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
